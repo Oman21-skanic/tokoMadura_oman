@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Data produk Mang Omen</title>
+</head>
+    <body>
+    <div class="container">
+        <h1 align="center">Data yang ada di Omen</h1>
+        <form id="inputForm">
+        <div class="label">
+            <label for="namaProduk">Nama Produk:</label>
+            <input type="text" id="namaProduk" required placeholder="Nama Produk">
+        </div>
+        <div class="label">
+            <label for="hargaSatuan">Harga Satuan:</label>
+            <input type="number" id="hargaSatuan" required placeholder="Harga Satuan">
+        </div>
+        <div class="label">
+            <label for="jumlah" class="gtw">Jumlah:</label>
+            <input type="number" id="jumlah" required placeholder="Jumlah Barang">
+        </div>
+            <button type="submit">Tambah</button>
+        </form>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                    <th>Jml</th>
+                    <th>JmlHarga</th>
+                </tr>
+            </thead>
+        <tbody>
+        <!-- Data akan ditambahkan di sini -->
+        </tbody>
+        </table>
+        <div class="total" id="totalHarga">Total Pembayaran: Rp 0</div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
